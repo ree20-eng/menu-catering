@@ -1,0 +1,23 @@
+create database db_catering_jawa;
+use db_catering jawa;
+create table menu_paket(
+id int(100) primary key auto_increment ,
+nama_paket varchar(100),
+harga int(11),
+gambar varchar(50),
+ratig float,
+ulasan int (11),
+);
+
+
+create table menu_costum(
+id int(100) primary key auto_increment ,
+kategori(50),
+nama_item varchar(100),
+harga int(11),
+gambar varchar(50)
+);
+
+
+
+
