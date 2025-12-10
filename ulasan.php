@@ -191,6 +191,31 @@ body { font-family: "Salsa", sans-serif;
   background: #f2f2f2;
   object-fit:cover;
 }
+.btn-ulasan{
+  display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+
+    background-color: #e28b00;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    width: fit-content;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: "poppins";
+    margin-left: auto;
+}
+.btn-ulasan .icon{
+  width: 22px;
+    height: 22px;
+    
+}
+
+
 
 /* nama + rating row */
 .meta {
@@ -238,7 +263,7 @@ function toggleSidebar() {
 
 <!-- ===== SIDEBAR ===== -->
 <div class="sidebar" id="sidebar">
-    <a href="menu_paket.php">Menu Paket</a>
+    <a href="menu.php">Menu Paket</a>
     <a href="menu_costum.php">Menu Costum</a>
     <a href="transaksi.php">Transaksi</a>
     <a href="status.php">Status</a>
@@ -297,6 +322,12 @@ function toggleSidebar() {
   </div>
 
 </div>
+<a class="btn-ulasan" 
+               href="input_ulasan.php" href="input_ulasan.php">
+               beri ulasan sekarang
+               <img src="img/chat.png" class="icon">
+            </a>
+        
 <script>
 const sidebar = document.getElementById('sidebar');
 const overlay = document.getElementById('overlay');
